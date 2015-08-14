@@ -83,7 +83,7 @@ def main():
                           prefix=module.params["prefix"],
                           dir=module.params["dir"],
                           text=module.boolean(module.params["text"]))
-    except Exception as e:
+    except Exception, e:
         module.fail_json(msg="Error while creating tempfile: %s" % str(e))
 
     module.exit_json(changed=True, file=path)
