@@ -35,20 +35,20 @@ options:
         default: ""
     prefix:
         description:
-            - If specified, the file name will begin with that preix.
+            - If specified, the file name will begin with that prefix.
         required: false
         default: "tmp"
     dir:
         description:
-            - If specified, the file will be created in that directory.
-            - The default comes from setting the TMPDIR, TEMP, or TMP
-            - environment variables.
+            - If specified, the file will be created in that directory. The
+              default comes from setting the TMPDIR, TEMP, or TMP
+              environment variables.
         required: false
         default: null
     text:
         description:
             - If specified, it indicates to open the file in binary mode
-            - (the default) or text mode.
+              (the default) or text mode.
         required: false
         default: "no"
 '''
